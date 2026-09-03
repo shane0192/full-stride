@@ -125,6 +125,13 @@ Use sparingly — maximum 1–2 per issue — to highlight the most memorable ed
 - Main text: Instrument Serif 36px, weight 500, #2d6b5a
 - This is the pull quote treatment at its largest — it should be punchy and actionable
 
+### Border rule — no single-side borders on rounded containers
+If an element has `border-radius`, it must NOT have a single-side border (e.g. `border-left`). Choose one:
+- **Rounded container with background color** → no border at all
+- **Left-border accent** → no `border-radius` on that element (flat/square element only)
+
+This applies to all cards, tease boxes, callout containers, and any block-level element with `border-radius`.
+
 ### Verdict / Rating
 Never use badge-style elements (colored boxes with borders). Instead use the left-border blockquote treatment:
 ```html
